@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<article class="post">
+
+  <a href="javascript:void(0)" onclick="history.go(-1)">
+    {% octicon arrow-left height:32 class:"right left" aria-label:back opacity:0.3 %}
+  </a>
+
+  <h1 class="post-title">{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date post-date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+</article>

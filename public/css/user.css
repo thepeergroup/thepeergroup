@@ -1,0 +1,177 @@
+.content > h1, h2, h3 {
+  margin-top: 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.content > h1 {
+  padding-top: 2rem;
+}
+
+.content > h2 {
+  margin-bottom: 2rem;
+}
+
+.resume h3 {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.resume ul {
+  margin-bottom: 3rem;
+}
+
+span .em {
+  font-weight: bold !important;
+}
+
+.content > p, ul {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0px;
+}
+
+ul.is {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+li > span.main {
+  font-size: 1.25rem;
+}
+
+li > span.main a {
+  text-decoration: underline;
+}
+
+li > span.main a:hover {
+  text-decoration: none;
+}
+
+.sub::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.sub {
+  display: block;
+  margin-top: -1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+p.lives-matter {
+  margin-top: 4rem;
+}
+
+.trans.a {
+  color: #55CDFC;
+}
+
+.trans.b {
+  color: #999; /* Actually white but what can you do */
+}
+
+.trans.c {
+  color: #F7A8B8;
+}
+
+a.back {
+  display: block;
+  margin-top: 1rem;
+  /*margin-left: 1rem;*/
+}
+
+/*
+  TOOLTIP
+  https://www.w3schools.com/css/css_tooltip.asp
+*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+
+  width: 300px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -150px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+  background-color: #AAA;
+  color: #FFF;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 3px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #AAA transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over or click the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip:active .tooltiptext {
+  visibility: visible;
+}
+
+#cta {
+  background-color: #EEE;
+  padding: 0.5rem;
+}
+
+#cta p {
+  margin: 0.5rem;
+}
+
+#logo {
+  width: 60px;
+  margin-bottom: -1rem;
+}
+
+
+.profile {
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, black 66%, rgba(0, 0, 0, 0.0) 50%);
+  mask-image:         radial-gradient(circle at 50% 50%, black 66%, rgba(0, 0, 0, 0.0) 50%);
+}
+
+.profile.thumb { width: 150px; }
+.profile.main  { width: 300px; }
+
+
+ul#team {
+  list-style-type: none;
+}
+
+#team li { display: block; }
+
+#team img {
+  display: block;
+  float: left;
+}
+
+#team .team-short {
+  display: block;
+  margin-left: 200px;
+  width: 80%;
+}

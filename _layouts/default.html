@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      {% if page.title %}{{ page.title }} &bull; {% endif %}{{ site.name }}
+    </title>
+
+    <!-- DEDUPE THESE -->
+    {% include head.html %}
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Unlinking the Sass-based stylesheet -->
+    <!-- <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" /> -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7WM177HP82"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-7WM177HP82');
+    </script>
+  </head>
+
+  <body class="theme-base-0c">
+    <!-- <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div> -->
+
+
+    <div id="main" role="main" class="content container">
+      <a href="/">
+        <img id="logo" alt="The Peer Group logo" src="images/peergrp.png" />
+      </a>
+
+      <br />
+
+      {% if page.url == "/" %}
+      {% else %}
+        {% include back-arrow.html %}
+      {% endif %}
+
+      {{ content }}
+
+      <p>
+        <br />
+        <br />
+        <small>
+          Icons made by <a href="https://www.flaticon.com/free-icon/left-arrow_2223615" title="bqlqn" target="_blank">bqlqn</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>
+        </small>
+      </p>
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+
+    {% include analytics.html %}
+  </body>
+</html>
