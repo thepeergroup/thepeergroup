@@ -1,0 +1,14 @@
+{% assign first_name = member.name | split: " " | first %}
+
+<div class="member">
+  <img src="images/team/{{ member.name | slugify }}.jpg" class="profile thumb" />
+  <div class="spacer"></div>
+  <div class="info">
+    <h3>{{ member.name }}</h3>
+    <span class="sub">{{ member.roles | join: " &middot; " }}</span>
+    <p>
+      {{ first_name }} ({{ member.pronouns }}) {{ member.short_bio }}
+    </p>
+    <a>More about {{ first_name }} -></a>
+  </div>
+</div>

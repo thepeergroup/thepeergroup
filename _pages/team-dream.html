@@ -1,7 +1,11 @@
 ---
 layout: default
-title: Team
+title: Dream Team
 ---
+
+<p>
+  <em>This is a secret page that only you can see!</em>
+</p>
 
 <h1>Meet Our Team</h1>
 
@@ -9,7 +13,7 @@ title: Team
 
 <div id="team">
 
-  {% assign actual_members = site.data.members | where: "status", "joined" %}
+  {% assign actual_members = site.data.members %}
 
   {% for member in actual_members  %}
     {% include member.html member=member %}

@@ -1,0 +1,45 @@
+-
+  name: Matt Cloyd
+  pronouns: they/them
+  roles:
+    - founder
+    - conflict resolution consulting
+  short_bio: |
+    is a founder of The Peer Group. They are a mediator, dialogue facilitator,
+    and the creator of the Peer software used in the Group's conflict analysis work.
+  status: joined
+
+-
+  name: Mayuka Kowaguchi
+  pronouns: she/her
+  roles:
+    - founder
+    - management consulting
+  short_bio: |
+    is a founder of The Peer Group. She is a management consultant at PwC Japan
+    with 8 years of experience.
+  status: wishlist
+
+-
+  name: Kylie Millbern
+  pronouns: she/her
+  roles:
+    - mediation
+    - facilitation
+    - program evaluation
+  short_bio: |
+    is a mediator and facilitator with experience in diversity and leadership work
+    with the City of Cambridge, MA. She has won academic awards for conflict resolution
+    program evaluation in the Middle East.
+  status: wishlist
+
+-
+  name: Garry Ratliff
+  pronouns: he/him
+  roles:
+    - counseling
+    - mediation
+  short_bio: |
+    is a skilled counselor with experience working with adults and youth. He holds a
+    Graduate Certificate in Conflict Resolution from the University of Massachusetts.
+  status: wishlist

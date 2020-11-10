@@ -155,23 +155,16 @@ a.back {
   mask-image:         radial-gradient(circle at 50% 50%, black 66%, rgba(0, 0, 0, 0.0) 50%);
 }
 
-.profile.thumb { width: 150px; }
+.profile.thumb { width: 175px; }
 .profile.main  { width: 300px; }
 
-
-ul#team {
-  list-style-type: none;
+#team div.member {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
-#team li { display: block; }
+#team .member img { flex-shrink: 0; }
+#team .member .spacer { width: 3%; flex-shrink: 0; }
 
-#team img {
-  display: block;
-  float: left;
-}
-
-#team .team-short {
-  display: block;
-  margin-left: 200px;
-  width: 80%;
-}
+#team h3 { padding: 0; margin: 0; }
